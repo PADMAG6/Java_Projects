@@ -32,10 +32,10 @@ public class Userinput {
 	}
 	}
 
-
+// if else if statement:
 package com.internsharla.java;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Userinput {
 	public static void main(String[] args) {
@@ -53,4 +53,51 @@ public class Userinput {
 		}
 		System.out.println("grade of studen is:"+ gade);
 	}
+	
+	
+	
+// switch stament with break	
+package com.internsharla.java;
+
+import java.util.Scanner;
+
+public class Userinput {
+	public static void main(String[] args) {
+		//String green;
+		char gade;
+		int score = 100;
+		if (score >= 90) {
+			gade = 'A';
+		} else if (score >= 80) {
+			gade = 'B';
+		} else if (score >= 70) {
+			gade = 'C';
+		} else {
+			gade = 'F';
+		}
+		System.out.println("grade of studen is:" + gade);
+		gade = 'X';
+
+		switch (gade) {
+			case 'A':
+				System.out.println("very good marks");
+				break;
+			case 'B':
+				System.out.println("good marks");
+				break;
+			case 'C':
+				System.out.println("average marks");
+				break;
+			case 'F':
+				System.out.println("failed");
+				break;
+			default:
+				System.out.println("no existing grade");
+
+		}
+		}
+	}
+	
+	
+	
 	
