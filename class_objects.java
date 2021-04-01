@@ -42,3 +42,23 @@ public static void main(String[] args) {
 }
 
 
+
+//
+package com.internshala.javaapp;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Cake myCake = new Cake();
+
+        myCake.flavour = "Black Forest";
+    }
+}
+
+class Cake{
+    String cakeName, flavour;
+    int price;
+    boolean isAvailable;
+}
+
+
