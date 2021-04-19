@@ -68,5 +68,30 @@ class Student {
 	}
 
 }
+------------------------------------interface ---------------------
+package com.internsharla.java;
+
+public class Main {
+	public static void main(String[] args) {
+		Perimeter peri = new Area1();
+		peri.perimenter(2,5);
+
+	}
+}
+interface Perimeter {
+
+	 void perimenter(int i, int i1);
+
+}
+
+class Area1 implements Perimeter {
+
+	@Override
+	public void perimenter(int l, int w) {
+		int p= 2 * (l+w);
+		System.out.println(p);
+	}
+}
+
 
 
