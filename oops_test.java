@@ -93,5 +93,50 @@ class Area1 implements Perimeter {
 	}
 }
 
+----------------------------------------------------------abstract -----------------
+	package com.internsharla.java;
+
+public class Main {
+	public static void main(String[] args) {
+		Animal ani = new Dog1();
+		Animal ani1 = new Cat();
+
+		ani.dogs();
+		ani1.cats();
+
+	}
+}
+abstract class Animal {
+
+		abstract public void cats();
+
+		abstract public void dogs();
+	}
+	class Dog1 extends Animal {
+
+		@Override
+		public void cats() {
+		}
+
+		@Override
+		public void dogs() {
+			System.out.println("dogs bark");
+		}
+
+	}
+	class Cat extends Animal {
+
+		@Override
+		public void cats() {
+			System.out.println("Cats meow");
+		}
+
+		@Override
+		public void dogs() {
+		}
+
+	}
+
+
 
 
