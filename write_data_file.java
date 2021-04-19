@@ -7,12 +7,12 @@ import java.util.Map;
 public class Main {
 	public static void main(String[] args) {
 
-	String data = "I love India";
+	String data = "I love India";  // declare data here
 	try {
-		FileOutputStream fos = new FileOutputStream("myfile.txt");
-		byte[] byteData = data.getBytes();
+		FileOutputStream fos = new FileOutputStream("myfile.txt");  //we need to create a file output stram to create and open file
+		byte[] byteData = data.getBytes(); //write method to write data to file
 		fos.write(byteData);
-		fos.close();
+		fos.close();   // to close the file, no memory and leackage
 	} catch (IOException ex) {
 		System.out.println(ex);
 	}
@@ -45,12 +45,12 @@ public class Main {
     //Read datd
 		try {
 
-			FileInputStream fis = new FileInputStream("myfile.txt");
+			FileInputStream fis = new FileInputStream("myfile.txt");      //use fileinputstream to open file
 			int i = 0;
 			while ((i = fis.read()) != -1) { // -1 is end of file it is default present in java
-				System.out.println((char) i);
+				System.out.println((char) i); //use read() to read from the file opend
 			}
-			fis.close();
+			fis.close();  //use close() to close the stream
 		} catch (IOException x) {
 			System.out.println(x);
 
