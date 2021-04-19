@@ -32,3 +32,41 @@ class Area {
    }
 
 }
+--------------------------------------------------------
+package com.internsharla.java;
+
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) {
+
+		Student s1 = new Student(1,"ram",99);
+		Student s2 =  new Student(2,"rani",67);
+		Student s3 = new Student(3,"raju",45);
+
+
+		ArrayList<Student> studentList = new ArrayList<>();
+		studentList.add(s1);
+		studentList.add(s2);
+		studentList.add(s3);
+
+		for (Student stu : studentList) {
+			System.out.println(stu.rol + " " + stu.marks + " " + stu.name);
+
+		}
+      	}
+}
+class Student {
+	int rol;
+	String name;
+	int marks;
+
+	Student(int rol, String name , int marks) {
+		this.rol = rol;
+		this.name =  name;
+		this.marks = marks;
+	}
+
+}
+
+
